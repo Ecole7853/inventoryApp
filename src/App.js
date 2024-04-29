@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+//import Dashboard from "./components/Dashboard.js";
+import Login from './pages/LoginPage.js';
+import Navbar from './components/navibar.js';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -25,24 +27,17 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( 
+
+  <div class="h-screen w-screen overflow-hidden"><></><Navbar /><Login /></div>
   );
 }
 
+
+
 export default App;
+
+
+//FIX LINKS, INSTALL REACT ROUTER 
+//SCAFFOLD NEXT COMPONENTS AND PAGES
+//COMPLETE ROUTER LINKS FOR THESE PAGES
